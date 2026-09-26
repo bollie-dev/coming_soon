@@ -1,76 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: system-ui, sans-serif;
-      background: #485fc7;
-      color: #fff;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon</title>
+
+<link rel="stylesheet" href="bulma.min.css">
+
+<style>
+:root {
+    --bg-primary: #0a0f1f;
+    --bg-secondary: #111827;
+    --accent: #4f7cff;
+    --accent-light: #7ca4ff;
+    --text-primary: #ffffff;
+    --text-secondary: #b7c0d4;
+    --border: rgba(255,255,255,0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, Segoe UI, Roboto, sans-serif;
+    color: var(--text-primary);
+    background:
+        radial-gradient(circle at top left, #18337d 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #1d4ed8 0%, transparent 35%),
+        linear-gradient(
+            135deg,
+            var(--bg-primary),
+            var(--bg-secondary)
+        );
+}
+
+.page-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 760px;
+}
+
+.card-panel {
+    padding: 4rem 3rem;
+    text-align: center;
+
+    background: rgba(17, 24, 39, 0.75);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid var(--border);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.45),
+        0 0 40px rgba(79,124,255,0.12);
+}
+
+.coming-badge {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0.45rem 1rem;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    background: rgba(79,124,255,0.15);
+    color: var(--accent-light);
+
+    border: 1px solid rgba(79,124,255,0.3);
+    border-radius: 999px;
+}
+
+.title {
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+
+    background: linear-gradient(
+        to right,
+        #ffffff,
+        #b8c8ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.35rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+.cta-wrapper {
+    margin-top: 2.5rem;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.9rem 1.8rem;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    background: linear-gradient(
+        135deg,
+        var(--accent),
+        #305be8
+    );
+
+    color: white;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 30px rgba(79,124,255,0.45);
+}
+
+.cta-button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.footer-note {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #7f8ba6;
+}
+
+@media (max-width: 768px) {
+
+    .card-panel {
+        padding: 2.5rem 1.5rem;
     }
-    .page-hero {
-      min-height: 100vh;
-    }
-    .page-hero-body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 1.5rem;
-    }
-    .page-container {
-      text-align: center;
-      max-width: 48rem;
-      margin: 0 auto;
-    }
-    .title {
-      margin: 0 0 1rem;
-      font-size: 3rem;
-      line-height: 1.125;
-    }
+
     .subtitle {
-      margin: 0 0 1rem;
-      font-size: 1.5rem;
-      font-weight: 400;
+        font-size: 1.1rem;
     }
-    .cta-button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-weight: 600;
-      background: #fff;
-      color: #363636;
-      font-size: 1.125rem;
-    }
-    .cta-button:focus-visible {
-      outline: 3px solid #ffe08a;
-      outline-offset: 3px;
-    }
-    .cta-wrapper {
-      margin-top: 1.5rem;
-    }
-  </style>
-  <!-- Ship bulma.min.css with this page; inline styles above provide basic fallback. -->
-  <link rel="stylesheet" href="bulma.min.css">
+}
+</style>
 </head>
+
 <body>
-  <main class="page-hero">
-    <div class="page-hero-body">
-      <div class="page-container">
-        <h1 class="title">Coming Soon</h1>
-        <p class="subtitle">This product is not publicly available yet.</p>
-        <p>When this product is released as open source, its GitHub link will be published here.</p>
-        <p>Thanks for your interest. Check back shortly for updates.</p>
-        <div class="cta-wrapper">
-          <a class="cta-button" href="https://github.com/" target="_blank" rel="noopener noreferrer">Visit GitHub homepage (new tab)</a>
+
+<main class="page-hero">
+
+    <div class="page-container">
+
+        <div class="card-panel">
+
+            <div class="coming-badge">
+                Coming Soon
+            </div>
+
+            <h1 class="title">
+                Product Under Development
+            </h1>
+
+            <p class="subtitle">
+                This project is not publicly available yet.
+            </p>
+
+            <p class="description">
+                We are actively building and refining this solution.
+                Once the project reaches its open-source release,
+                the GitHub repository and documentation will be
+                published here for public access.
+            </p>
+
+            <div class="cta-wrapper">
+                <a
+                    class="cta-button"
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View GitHub
+                </a>
+            </div>
+
+            <div class="footer-note">
+                Thanks for your interest. Check back soon for updates.
+            </div>
+
         </div>
-      </div>
+
     </div>
-  </main>
+
+</main>
+
 </body>
 </html>
