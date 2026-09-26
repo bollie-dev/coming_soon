@@ -54,6 +54,10 @@
     .cta-wrapper {
       margin-top: 1.5rem;
     }
+    .cta-note {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
   </style>
   <!-- Ship bulma.min.css with this page; inline styles above provide basic fallback. -->
   <link rel="stylesheet" href="bulma.min.css">
@@ -66,7 +70,10 @@
         <p class="subtitle">This product is not publicly available yet.</p>
         <p>When this product is released as open source, its GitHub link will be published here.</p>
         <p>Thanks for your interest. Check back shortly for updates.</p>
-        <div class="cta-wrapper"><a class="cta-button" href="https://github.com/" target="_blank" rel="noopener noreferrer">Visit GitHub homepage (opens in a new tab)</a></div>
+        <div class="cta-wrapper">
+          <a class="cta-button" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-describedby="cta-new-tab">Visit GitHub homepage</a>
+          <p class="cta-note" id="cta-new-tab">Opens in a new tab.</p>
+        </div>
       </div>
     </div>
   </main>
