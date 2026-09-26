@@ -15,7 +15,7 @@
         Thanks for checking out this product. We are preparing the repository and it will be public shortly.
       </p>
       <a class="cta" href="https://github.com/bollie-dev/coming_soon">
-        Go to the GitHub repository
+        Open the GitHub repository
       </a>
     </section>
   </main>
