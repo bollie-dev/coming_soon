@@ -14,8 +14,8 @@
       <p class="description">
         Thanks for checking out this product. We are preparing the repository and it will be public shortly.
       </p>
-      <a class="cta" href="https://github.com/bollie-dev/coming_soon" target="_blank" rel="noopener noreferrer">
-        Open the GitHub repository (opens in a new tab)
+      <a class="cta" href="https://github.com/bollie-dev?tab=repositories" target="_blank" rel="noopener noreferrer">
+        Open my GitHub repositories (opens in a new tab)
       </a>
     </section>
   </main>
