@@ -12,17 +12,17 @@
       background: #485fc7;
       color: #fff;
     }
-    .hero {
+    .page-hero {
       min-height: 100vh;
     }
-    .hero-body {
+    .page-hero-body {
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       padding: 1.5rem;
     }
-    .container {
+    .page-container {
       text-align: center;
       max-width: 48rem;
       margin: 0 auto;
@@ -37,21 +37,14 @@
       font-size: 1.5rem;
       font-weight: 400;
     }
-    .mt-4 {
-      margin-top: 1.5rem;
-    }
-    .button {
+    .cta-button {
       display: inline-block;
       padding: 0.75rem 1.5rem;
       border-radius: 0.5rem;
       text-decoration: none;
       font-weight: 600;
-    }
-    .is-light {
       background: #fff;
       color: #363636;
-    }
-    .is-medium {
       font-size: 1.125rem;
     }
   </style>
@@ -59,14 +52,14 @@
   <link rel="stylesheet" href="bulma.min.css">
 </head>
 <body>
-  <main class="hero is-fullheight is-link">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title is-1">Coming Soon</h1>
-        <p class="subtitle is-4">This product is not publicly available yet.</p>
+  <main class="page-hero">
+    <div class="page-hero-body">
+      <div class="page-container">
+        <h1 class="title">Coming Soon</h1>
+        <p class="subtitle">This product is not publicly available yet.</p>
         <p>When this product is released as open source, its GitHub link will be published here.</p>
         <p>Thanks for your interest. Check back shortly for updates.</p>
-        <p class="mt-4"><a class="button is-light is-medium" href="https://github.com/" target="_self">Visit GitHub homepage</a></p>
+        <div style="margin-top: 1.5rem;"><a class="cta-button" href="https://github.com/" target="_self">Visit GitHub homepage</a></div>
       </div>
     </div>
   </main>
