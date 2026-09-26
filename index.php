@@ -14,7 +14,7 @@
       <p class="description">
         Thanks for checking out this product. We are preparing the repository and it will be public shortly.
       </p>
-      <a class="cta" href="https://github.com/bollie-dev/coming_soon" target="_blank" rel="noopener noreferrer">
+      <a class="cta" href="https://github.com/bollie-dev/coming_soon">
         Go to the GitHub repository
       </a>
     </section>
